@@ -18,6 +18,7 @@ namespace Lab2.dal
         public DbSet<Course> Courses { get; set; }
         public DbSet<StudentCourse> StudentCourses { get; set; }
 
+        public DbSet<Department> Departments { get; set; }
         // Налаштування зв'язків (Fluent API)
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

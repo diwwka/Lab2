@@ -10,7 +10,11 @@ namespace Lab2.dal.Entities
         public string Title { get; set; }
         public int Credits { get; set; }
 
-        // Навігаційна властивість: список студентів на цьому курсі
+        // Зовнішній ключ (Foreign Key)
+        public int? DepartmentId { get; set; }
+        // Навігаційна властивість
+        public Department? Department { get; set; }
+
         public ICollection<StudentCourse> StudentCourses { get; set; }
     }
 }

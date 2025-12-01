@@ -9,6 +9,8 @@ namespace Lab2.dal.Entities
         public int StudentId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string? Email { get; set; } // Знак питання означає, що поле може бути пустим
+        public DateTime BirthDate { get; set; }
 
         // Навігаційна властивість: список курсів цього студента
         public ICollection<StudentCourse> StudentCourses { get; set; }
